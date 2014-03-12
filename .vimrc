@@ -15,5 +15,5 @@ set showmatch
 set ts=4
 set tabstop=4
 set shiftwidth=4
-so /usr/share/vim/vim62/syntax/cst.vim
+so ~/vimsyntax/cst.vim
 
