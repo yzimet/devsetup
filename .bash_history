@@ -74,3 +74,36 @@ vim config
 cd ..
 git status
 git push origin master
+cd /var/lo
+ls
+cd /var/log/
+ls
+ls -ltrah
+cd httpd/
+ls
+ls ltrah
+ls -ltrah
+tail -f error_log 
+ls -ltrah
+tail -f aaron.wunderground.com_access.log
+cd /lgos
+cd /logs
+ls
+ls -ltra
+tail -f aaron.wunderground.com_access.log
+cd ..
+ls
+cd ..
+ls
+cd /tmp/
+ls
+cd ..
+cd /
+ls -ltrah
+cd /mnt/hardware/
+ls
+ls -ltrah
+cd logs
+ls
+mkexit
+exit
