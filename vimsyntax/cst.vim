@@ -161,7 +161,7 @@ syn keyword htmlTagName		contained noscript
 syn keyword htmlSpecialTagName  contained script style
 if main_syntax != 'java' || exists("java_javascript")
   " JAVA SCRIPT
-  syn include @htmlJavaScript <sfile>:p:h/javascript.vim
+  syn include @htmlJavaScript /usr/share/vim/vim72/syntax/javascript.vim
   unlet b:current_syntax
   syn region  javaScript start=+<script[^>]*>+ keepend end=+</script>+me=s-1 contains=@htmlJavaScript,htmlCssStyleComment,htmlScriptTag,@htmlPreproc
   syn region  htmlScriptTag     contained start=+<script+ end=+>+       contains=htmlTagN,htmlString,htmlArg,htmlValue,htmlTagError,htmlEvent
@@ -186,7 +186,7 @@ endif
 
 if main_syntax != 'java' || exists("java_vb")
   " VB SCRIPT
-  syn include @htmlVbScript <sfile>:p:h/vb.vim
+  syn include @htmlVbScript /usr/share/vim/vim72/syntax/vb.vim
   unlet b:current_syntax
   syn region  javaScript start=+<script [^>]*language *=[^>]*vbscript[^>]*>+ keepend end=+</script>+me=s-1 contains=@htmlVbScript,htmlCssStyleComment,htmlScriptTag,@htmlPreproc
 endif
@@ -196,7 +196,7 @@ syn cluster htmlJavaScript      add=@htmlPreproc
 if main_syntax != 'java' || exists("java_css")
   " embedded style sheets
   syn keyword htmlArg		contained media
-  syn include @htmlCss <sfile>:p:h/css.vim
+  syn include @htmlCss /usr/share/vim/vim72/syntax/css.vim
   unlet b:current_syntax
   syn region cssStyle start=+<style+ keepend end=+</style>+ contains=@htmlCss,htmlTag,htmlEndTag,htmlCssStyleComment,@htmlPreproc
   syn match htmlCssStyleComment contained "\(<!--\|-->\)"
