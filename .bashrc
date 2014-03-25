@@ -29,5 +29,10 @@ PATH=$PATH:$HOME/bin
 
 export PATH
 
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+		. /etc/bashrc
+fi
+
 #Make git log awesome
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
